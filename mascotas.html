@@ -9,13 +9,13 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
   </head>
-  <body style="background-image: url(img/bg.png);">
+  <body style="background-image: url(img/bg.png); background-repeat: no-repeat; background-size: cover;">
     
-    <nav class="navbar fixed-top" style="background-color: #000000;">
+    <nav class="navbar fixed-top" style="background-image: linear-gradient(to bottom, #0bc4d1, #077e9c);">
       <div class="container-fluid">
           <div class="row justify-content-between" style="margin-left: 6cm;">
               <div class="col-auto">
-                  <a class="navbar-brand" href="index.html" style="color: white;">
+                  <a class="navbar-brand" href="#" style="color: white;">
                       <img src="img/logo.png" alt="" style="width: 50px; margin-right: 10px;">
                       Tienda Increíble
                   </a>
@@ -24,7 +24,7 @@
                   <form class="d-flex rounded-pill" role="search" style="border-radius: 5cm; overflow: hidden;">
                       <div class="position-relative">
                           <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar en Tienda Increible" aria-label="Search" style="border-radius: 5m; width: 500px;">
-                          <button class="btn rounded-circle d-flex justify-content-center align-items-center position-absolute" type="submit" style="background-color: rgb(0, 0, 0); width: 34px; height: 34px; right: 0; top: 50%; transform: translateY(-50%); z-index: 1; margin-right: 10px;">
+                          <button class="btn rounded-circle d-flex justify-content-center align-items-center position-absolute" type="submit" style="background-color: rgb(0, 140, 255); width: 34px; height: 34px; right: 0; top: 50%; transform: translateY(-50%); z-index: 1; margin-right: 10px;">
                               <img src="img/buscar.svg" alt="" style="width: 20px; height: 20px;">
                           </button>
                       </div>
@@ -32,7 +32,7 @@
               </div>
               <div class="col-auto d-flex" style="margin: auto;">
                 <li class="nav-item d-flex" style="margin-left: 200px;">
-                  <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <span>
                       <img src="img/user.svg" alt="" style="width: 25px;">
                     </span>
@@ -51,7 +51,7 @@
       </div>
     </nav> 
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #000000;">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #0f62ce;">
       <div class="offcanvas-header" style="color: white;">
           <h5 class="offcanvas-title" id="offcanvasRightLabel" style="margin-top: 10px;">Carro <span>(0)</span></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -64,40 +64,41 @@
           <p style="font-weight: bold; margin-top: 5px; text-align: center;">Agrega algo a tu carrito</p>
           <p style="font-size: 15px; text-align: center;">Llévate algo o iremos por ti</p>
           <div class="container text-center" style="margin-top: 2px;">
-              <button type="button" class="btn rounded-pill btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #000000; font-weight: bold; color: white; margin-top: 5px;">
+              <button type="button" class="btn rounded-pill btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #03a3ff; font-weight: bold; color: white; margin-top: 5px;">
                   Buscar
               </button>
           </div>
       </div>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="background-color: #000000;">
-          <div class="modal-header" style="color: white;">
-            <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="registroForm" class="d-flex" style="overflow: hidden; display: block;">
-              <div class="position-relative">
-                  <input id="usuario" name="usuario" class="form-control me-2 rounded-pill" type="text" placeholder="Usuario"  style="border-radius: 5m; width: 450px;"><br><hr>
-                  <input id="contraseña" name="contraseña" class="form-control me-2 rounded-pill" type="password" placeholder="Contraseña" style="border-radius: 5m; width: 450px;"><br><hr>
-                  <input id="verificarcontra" name="verificarcontra" class="form-control me-2 rounded-pill" type="password" placeholder="Verificar contraseña" style="border-radius: 5m; width: 450px;"><br>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-outline-light">Registrarse</button>
-                  </div>
-              </div>
-            </form>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background-color: #29529e;">
+        <div class="modal-header" style="color: white;">
+          <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registroForm" class="d-flex" style="overflow: hidden; display: block;">
+            <div class="position-relative">
+                <input id="usuario" name="usuario" class="form-control me-2 rounded-pill" type="text" placeholder="Usuario"  style="border-radius: 5m; width: 450px;"><br><hr>
+                <input id="contraseña" name="contraseña" class="form-control me-2 rounded-pill" type="password" placeholder="Contraseña" style="border-radius: 5m; width: 450px;"><br><hr>
+                <input id="verificarcontra" name="verificarcontra" class="form-control me-2 rounded-pill" type="password" placeholder="Verificar contraseña" style="border-radius: 5m; width: 450px;"><br>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-outline-light">Registrarse</button>
+                </div>
             </div>
+          </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <div class="container-fluid d-flex justify-content-center" style="max-width: 500px;">
-    <div class="card bg-dark text-white align-items-center border-light" style="max-width: 540px; margin: auto; margin-top: 200px;">
+    <div class="card text-bg-light align-items-center border-light" style="max-width: 540px; margin: auto; margin-top: 200px;">
       <div class="row g-0">
         <div class="col-md-4 justify-content-center align-items-center d-flex">
           <a href="darwin.html">
@@ -115,7 +116,7 @@
   </div>
 
   <div class="container-fluid d-flex justify-content-center" style="max-width: 500px;">
-    <div class="card bg-dark text-white align-items-center border-light" style="max-width: 540px; margin: auto; margin-top: 200px;">
+    <div class="card text-bg-light align-items-center border-light" style="max-width: 540px; margin: auto; margin-top: 200px;">
       <div class="row g-0">
         <div class="col-md-4 justify-content-center align-items-center d-flex">
           <a href="tortuga.html">

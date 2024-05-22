@@ -27,4 +27,13 @@ $(document).ready(function(){
         alert("¡Registro exitoso!");
         document.getElementById("registroForm").reset();
     });
+    
 });
+
+var cantidad = 0;
+
+function agregarcarrito(){
+
+    cantidad = cantidad + 1;
+    document.getElementById("cantidadCarro").innerText = "(" + cantidad + ")";
+}

@@ -31,9 +31,44 @@ $(document).ready(function(){
 });
 
 var cantidad = 0;
+var totalPrecio = 0;
 
-function agregarcarrito(){
+function agregarAlCarrito(nombre, precio) {
 
     cantidad = cantidad + 1;
+
     document.getElementById("cantidadCarro").innerText = "(" + cantidad + ")";
+
+    var nuevoProducto = document.createElement('div');
+    nuevoProducto.innerHTML = '<p>' + nombre + ' - $' + precio + '</p>';
+
+    var contenedorProductos = document.getElementById('listaProductos');
+    contenedorProductos.appendChild(nuevoProducto);
+
+    totalPrecio = totalPrecio + precio;
+
+    actualizarTotalPrecio();
+
+    mostrarOcultarMensajeCarrito();
+
+    var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight'));
+    offcanvas.show();
 }
+
+function actualizarTotalPrecio() {
+
+    document.getElementById("totalPrecio").innerText = "$" + totalPrecio.toFixed(2);
+}
+
+function mostrarOcultarMensajeCarrito() {
+    var mensajeCarrito = document.getElementById('mensajeCarrito');
+    if (cantidad > 0) {
+        mensajeCarrito.style.display = "none";
+    } else {
+        mensajeCarrito.style.display = "block";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    mostrarOcultarMensajeCarrito();
+});

@@ -77,30 +77,30 @@
     </div>
 
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content" style="background-color: #29529e;">
-        <div class="modal-header" style="color: white;">
-          <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="registroForm" class="d-flex" style="overflow: hidden; display: block;">
-            <div class="position-relative">
-                <input id="usuario" name="usuario" class="form-control me-2 rounded-pill" type="text" placeholder="Usuario"  style="border-radius: 5m; width: 450px;"><br><hr>
-                <input id="contraseña" name="contraseña" class="form-control me-2 rounded-pill" type="password" placeholder="Contraseña" style="border-radius: 5m; width: 450px;"><br><hr>
-                <input id="verificarcontra" name="verificarcontra" class="form-control me-2 rounded-pill" type="password" placeholder="Verificar contraseña" style="border-radius: 5m; width: 450px;"><br>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                  <button type="submit" class="btn btn-outline-light">Registrarse</button>
-                </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #29529e;">
+          <div class="modal-header" style="color: white;">
+            <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="registroForm" class="d-flex was-validated" novalidate style="overflow: hidden; display: block;">
+              <div class="position-relative has-validation">
+                  <input id="usuario" name="usuario" class="form-control me-2 rounded-pill" type="text" placeholder="Usuario" required="" style="border-radius: 5m; width: 450px;"><br><hr>
+                  <input id="contraseña" name="contraseña" class="form-control me-2 rounded-pill" type="password" placeholder="Contraseña" required="" style="border-radius: 5m; width: 450px;"><br><hr>
+                  <input id="verificarcontra" name="verificarcontra" class="form-control me-2 rounded-pill" type="password" placeholder="Verificar contraseña" required style="border-radius: 5m; width: 450px;"><br>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-outline-light">Registrarse</button>
+                  </div>
+              </div>
+            </form>
             </div>
-          </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
     <div class="container-fluid d-flex justify-content-center" style="max-width: 700px;">
         <div class="card text-bg-light border-primary align-items-center border-light" style="max-width: 600px; margin: auto; margin-top: 200px;">
@@ -203,7 +203,7 @@
           <div class="card text-bg-light" style="width: 18rem;">
             <img src="img/producto5.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Acindicionador-Anticloro Fritz</h5>
+              <h5 class="card-title">Acondicionador-Anticloro Fritz</h5>
               <p class="card-text">Fritz Complete es un verdadero acondicionador de agua todo en uno y controla el ciclo del nitrógeno.</p>
               <a href="#" class="btn btn-primary">Agregar al carro</a>
             </div>

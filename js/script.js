@@ -28,4 +28,3 @@ $(document).ready(function(){
         document.getElementById("registroForm").reset();
     });
 });
-
